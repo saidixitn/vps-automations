@@ -1,0 +1,41 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+credentials.json
+*credentials*.json
+!credentials.sample.json
+!clicks_credentials.sample.json
+token.json
+client_secrets.json
+!client_secrets.sample.json
+
+# Keys and Certificates
+*.pem
+*.key
+*.cert
+*.crt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Process Dumps & PM2 State
+core.*
+*.dump
+dump.pm2
+pm2_snapshot.json
+pm2_process_list_backup.json
+
+# Logs
+*.log
+logs/
+banana_cron.log
+
+# Temporary & OS files
+.DS_Store
+Thumbs.db

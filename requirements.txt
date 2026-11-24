@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+pymongo
+gspread
+google-auth
+google-auth-oauthlib
+python-multipart

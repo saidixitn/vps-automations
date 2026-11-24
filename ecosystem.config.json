@@ -1,0 +1,97 @@
+{
+  "apps": [
+    {
+      "name": "jobget-api",
+      "script": "/home/dixit/venv/bin/uvicorn",
+      "args": [
+        "main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ],
+      "cwd": "/home/dixit"
+    },
+    {
+      "name": "mongo-creds-sync",
+      "script": "/home/dixit/new_creds.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "daily-updates-report",
+      "script": "/home/dixit/updates.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "expiry-earnhaus",
+      "script": "/home/dixit/proxy_expires.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "stats-email-daily",
+      "script": "/home/dixit/run_stats.sh",
+      "args": []
+    },
+    {
+      "name": "expiry-directclients",
+      "script": "/home/dixit/dc_expires.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "banana-report",
+      "script": "/home/dixit/run_banana.sh",
+      "args": [
+        "2026-02-09"
+      ]
+    },
+    {
+      "name": "hotel-scraper",
+      "script": "/home/dixit/scrape_hotels.py",
+      "args": [],
+      "cwd": "/home/dixit",
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "Serper API",
+      "script": "/home/dixit/serper.py",
+      "args": [],
+      "cwd": "/home/dixit",
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "salary-topicswhiz",
+      "script": "/home/hari_uva/salary_desc_topicswhiz.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "expiry-newearnhaus",
+      "script": "/home/dixit/newearnhaus_expires.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "pub-expired-check",
+      "script": "/home/dixit/pub_expired_check.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "Expires-Report-Mail",
+      "script": "/home/dixit/dc_expires_mail.py",
+      "args": [],
+      "interpreter": "/home/dixit/venv/bin/python3"
+    },
+    {
+      "name": "mongo-daily-backup",
+      "script": "/home/dixit/venv/bin/python",
+      "args": [
+        "/home/dixit/backup_script.py"
+      ]
+    }
+  ]
+}

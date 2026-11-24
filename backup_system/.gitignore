@@ -1,0 +1,4 @@
+backup_system/dumps/
+*.gz
+venv/
+__pycache__/

@@ -1,0 +1,34 @@
+module.exports = {
+  apps: [
+    {
+      name: "semrush-import",
+
+      // IMPORTANT: exact script path
+      script: "/home/dixit/semrush_import.py",
+
+      // Use your venv python
+      interpreter: "/home/dixit/venv/bin/python",
+
+      exec_mode: "fork",
+      instances: 1,
+
+      // This is a batch job, not a server
+      autorestart: false,
+
+      // Optional: run daily at 02:30 UTC
+      cron_restart: "30 2 * * *",
+
+      // Environment
+      env: {
+        PYTHONUNBUFFERED: "1",
+        TZ: "UTC"
+      },
+
+      // Logs
+      out_file: "/home/dixit/logs/semrush_import.out.log",
+      error_file: "/home/dixit/logs/semrush_import.err.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss"
+    }
+  ]
+};
+
